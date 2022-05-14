@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="Home.css">
+    <title>T e n t  c o n s t r u c t i o n </title>
+  </head>
+  <body>
+<nav class="nav-bar">
+  <div class="logo">
+<img src="picture2.gif" alt="logo">
+  </div>
+  <div class="header-title">
+    <span>Tent construction ltd.</span>
+  </div>
+  <div class="icons">
+  <div class="icon"></div>
+  <div class="icon"></div>
+  <div class="icon"></div>
+  <ul class="content">
+  <a href="index.html" >  <li class="downitem">home</li></a>
+  <a href="aboutus.html" class="active">  <li class="downitem">about us</li></a>
+  <a href="service.html">  <li class="downitem">service</li></a>
+  <a href="careers.html">  <li class="downitem">careers</li></a>
+  <a href="contructus.html">  <li class="downitem">contact us</li></a>
+
+  </ul>
+  </div>
+  <ul class="items">
+    <li class="itemn"><a href="index.html" >home</a></li>
+    <li class="itemn"><a href="aboutus.html" class="active">about us</a></li>
+    <li class="itemn"><a href="service.html">service</a></li>
+    <li class="itemn"><a href="careers.html">careers</a></li>
+    <li class="itemn"><a href="contructus.html">contact us</a></li>
+
+  </ul>
+</nav>
+<div class="img">
+  <img src="./images/about.jpg" alt="">
+  <div class="imgtext">
+<h1>ABOUT US</h1>
+</div>
+</div>
+<div class="aboutext">
+  <h2 class="heading">Our heading there</h2>
+  <p class="desc">TENT CONSTRUCTION is a fast growing leading professional construction company,
+  specialist in Construction Project Management, Risk Management, Cost
+  Management, Time Management and Sustainable Construction. They have engaged
+  various engineering projects as construction professionals with higher level of
+  prestige and honor. They perform professional construction services for more than
+  thirty buildings in private and public sector. They executed construction work of
+  several factories with higher level of proficiency. Additionally they included
+  construction services for several Bridges, Telecommunication Towers and Roads
+  infrastructure in their profile.
+  </p>
+</div>
+
+
+<footer class="foter">
+  <div class="fotercontent">text number 1 <br> <br> my firm is good to mannage any type of problem </div>
+  <div class="fotercontent">text number 2</div>
+  <div class="fotercontent">text number 3</div>
+  <div class="fotercontent">text number 4</div>
+  <div class="fotercontent">text number 5</div>
+   <div class="fotercontent">text number 6</div>
+
+</footer>
+<script type="text/javascript">
+var prescroll = 0;
+
+  window.addEventListener("scroll", myScript);
+
+  function myScript()
+  {
+    var status = false;
+    if( window.scrollY > prescroll)
+    {
+      prescroll = window.scrollY;
+      status = false;
+      console.log(prescroll);
+    }
+    else if( window.scrollY < prescroll)
+    {
+      status = true;
+      prescroll = window.scrollY;
+    }
+
+    if(status)
+    {
+    document.querySelector('.nav-bar').classList.add('scroll-nav');
+    document.querySelector('.logo').classList.add('scroll-logo');
+  }
+  if(window.scrollY == 0 || status==false)
+  {
+    document.querySelector('.nav-bar').classList.remove('scroll-nav');
+    document.querySelector('.logo').classList.remove('scroll-logo');
+  }
+
+  }
+</script>
+<script type="text/javascript" src="aboutus.js">
+</script>
+  </body>
+</html>
